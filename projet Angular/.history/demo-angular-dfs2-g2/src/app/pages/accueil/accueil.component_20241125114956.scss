@@ -1,0 +1,19 @@
+.categorie{
+    display: flex;
+    margin: 5px;
+
+    .en-tete{
+        width: 100px;
+        height: 100px;
+        background-color: #ff00c8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &: :nth-child(1){
+        .en-tete{
+
+        }
+    }
+}
