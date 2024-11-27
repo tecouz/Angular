@@ -1,0 +1,11 @@
+<h1>Taches à réaliser</h1>
+
+<button mat-raised-button routerLink="/nouvelle-tache">
+  Nouvelle tache
+</button>
+
+@for (tache of taches; track $index) {
+
+<div>{{tache.texte}}</div>
+
+}

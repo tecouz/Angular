@@ -1,0 +1,33 @@
+<form [formGroup]="formulaire" (ngSubmit)="onAjoutTache()">
+
+  <mat-form-field>
+    <mat-label>Texte</mat-label>
+    <input formControlName="texte" matInput placeholder="Ex. Sortir les poubelles">
+
+    @if(formulaire.get("texte")?.hasError("minlength")) {
+    <mat-error>Le texte de la tache doit comporter au moins 5 caractères</mat-error>
+    } @else {
+    <mat-error>Le texte de la tache est obligatoire</mat-error>
+    }
+
+
+  </mat-form-field>
+
+
+
+  <div class="actions">
+
+    <button type="submit" mat-raised-button>
+      Ajouter la tache
+    </button>
+
+    <button routerLink="/" mat-raised-button>
+      Annuler
+    </button>
+
+  </div>
+
+
+
+
+</form>

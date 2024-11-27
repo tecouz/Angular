@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2em;
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 45%;
+    }
+  }
+}

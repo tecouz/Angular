@@ -1,0 +1,7 @@
+<h1>Taches à Réaliser</h1>
+
+<button mat-raised-button>Nouvelle tache</button>
+
+@for(tache of taches; track $index) {
+    <div>{{tache.texte}}</div>
+}
