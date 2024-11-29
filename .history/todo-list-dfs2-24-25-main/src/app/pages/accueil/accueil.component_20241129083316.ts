@@ -6,7 +6,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { RouterLink } from '@angular/router';
-import { Tache } from '../../models/Tache';
+
+import { Tache } from '../../models/tache';
 
 @Component({
   selector: 'app-accueil',

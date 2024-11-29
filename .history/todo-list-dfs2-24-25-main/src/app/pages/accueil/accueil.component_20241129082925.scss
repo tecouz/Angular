@@ -1,0 +1,8 @@
+.tache {
+    display: flex;
+    align-items: center;
+  
+    &.tache-termine {
+      text-decoration: line-through;
+    }
+  }

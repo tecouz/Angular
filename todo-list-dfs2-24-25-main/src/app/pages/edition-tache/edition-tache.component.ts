@@ -34,7 +34,7 @@ export class EditionTacheComponent {
 
       this.http
         .post("http://localhost:3000/tache", this.formulaire.value)
-        .subscribe(reponse => this.router.navigateByUrl("/"))
+        .subscribe((reponse: any) => this.router.navigateByUrl("/"))
 
     }
   }
